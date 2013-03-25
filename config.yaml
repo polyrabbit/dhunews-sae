@@ -1,0 +1,57 @@
+name: dhunews
+version: 1
+handlers:
+- url: /static/
+  static_path: static
+  gzip: on
+- url: /favicon.ico
+  static_path: favicon.ico
+# - errordoc: 404 /templates/404.html
+
+cron:
+- description: 每日一文
+  url: update?channel=meiriyiwen
+  schedule: 5 0,12 * * *
+  timezone: Beijing
+- description: 南方周末 - 刘未鹏
+  url: update?channel=infzm_lwp
+  schedule: 0 18 * * *
+  timezone: Beijing
+- description: 东华大学教务网
+  url: update?channel=dhu_jw
+  schedule: 0 18,12 * * *
+  timezone: Beijing
+- description: 东华新闻网-重大活动
+  url: update?channel=dhu_news_zdhd
+  schedule: 1 18,12 * * *
+  timezone: Beijing
+- description: 东华大学共青团
+  url: update?channel=dhu_youth
+  schedule: 2 18,12 * * *
+  timezone: Beijing
+- description: 东华大学校园讲座
+  url: update?channel=dhu_xyjz
+  schedule: 3 18,12 * * *
+  timezone: Beijing
+- description: 东华大学研究生部
+  url: update?channel=dhu_gs
+  schedule: 4 18,12 * * *
+  timezone: Beijing
+- description: 材料学院实验室
+  url: update?channel=dhu_cmse_lab_announcement
+  schedule: 6 18,12 * * *
+  timezone: Beijing
+- description: 清除过时的kvdb数据
+  url: wipeoutdatekvdb
+  schedule: 0 */3 * * *
+  timezone: Beijing
+- description: 更新天气信息
+  url: weather
+  schedule: 20 */1 * * *
+  timezone: Beijing
+# - description: 贴吧签到
+#   url: tieba_checkin
+#   schedule: 3 0 * * *
+#   timezone: Beijing
+handle:
+- compress:  if ( out_header["Content-type"] ~ "image/png" ) compress

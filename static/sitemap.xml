@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://dhunews.sinaapp.com/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/meiriyiwen</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/dhu_jw</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/dhu_news_zdhd</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/dhu_youth</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/dhu_xyjz</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/infzm_lwp</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://dhunews.sinaapp.com/dhu_gs</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>

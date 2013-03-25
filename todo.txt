@@ -1,0 +1,16 @@
+访问/update时，若UA中不包含sae，则认为是非法访问，log其访问信息
+只保存400项记录
+加入conn.commit() for future use
+consider add a const.py file
+表不存在时自动创建
+如果isfromcache则列表不再解析
+everyday i hate mysql more
+用函数修饰符捕捉UpdateFeed.GET和POST的异常
+对rss文件进行缓存处理
+用403 Forbidden处理一些GET请求
+webpy中有function profiler(app) Outputs basic profiling information at the bottom of each response.
+为每篇文章加一个一键分享功能
+有些文章就是一个图片，增加图片处理的功能（若图片的长度或高度小于某一阙值，则忽略不计）
+连接改成通过本地跳转
+输出的rss要设置http头
+如果rss文件不存在，则调用generator生成一个
